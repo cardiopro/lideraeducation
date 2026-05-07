@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIDERA Education | Habilidades Blandas para Niños</title>
+    <meta name="description" content="Enseñanza de habilidades blandas y sociales a niños de 6 a 12 años en formato virtual. Clases de liderazgo, oratoria e inteligencia emocional.">
+    
+    <!-- Google Fonts: Montserrat para texto general, Style Script imitando el logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS para diseño profesional rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#002855', /* Azul de tu logo */
+                        navyLight: '#003a7a',
+                        gold: '#d4af37', /* Dorado de tu logo */
+                        goldHover: '#c19e2e',
+                        lightBg: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Caveat', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Pequeños ajustes personalizados */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .hero-pattern {
+            background-color: #002855;
+            background-image: radial-gradient(#003a7a 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-lightBg">
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Imagen -->
+                <div class="flex-shrink-0 flex items-center justify-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img src="2.png" alt="Lidera Education Logo" class="h-16 md:h-20 w-auto p-1" onerror="this.src='https://placehold.co/200x80/002855/FFFFFF?text=LIDERA+Education&font=Montserrat'">
+                </div>
+                
+                <!-- Enlaces Desktop -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#nosotros" class="text-gray-600 hover:text-navy font-medium transition">Nosotros</a>
+                    <a href="#beneficios" class="text-gray-600 hover:text-navy font-medium transition">Beneficios</a>
+                    <a href="#cursos" class="text-gray-600 hover:text-navy font-medium transition">Nuestros Cursos</a>
+                    <a href="https://wa.me/51969714577?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cursos%20para%20ni%C3%B1os." target="_blank" class="bg-gold hover:bg-goldHover text-navy font-bold py-2.5 px-6 rounded-full transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contáctanos
+                    </a>
+                </div>
+
+                <!-- Botón Mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-navy focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú Mobile Desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="#nosotros" class="block px-3 py-2 text-gray-600 font-medium">Nosotros</a>
+            <a href="#beneficios" class="block px-3 py-2 text-gray-600 font-medium">Beneficios</a>
+            <a href="#cursos" class="block px-3 py-2 text-gray-600 font-medium">Cursos</a>
+            <a href="https://wa.me/51969714577" target="_blank" class="block text-center mt-4 bg-gold text-navy font-bold py-3 rounded-full">Escríbenos al WhatsApp</a>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO (INICIO) -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <div class="inline-block bg-white/10 text-gold font-semibold px-4 py-1.5 rounded-full mb-6 border border-gold/30">
+                        ✨ Para niños de 6 a 12 años
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                        Prepara a tu hijo para <span class="text-gold">el mundo real</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                        Educación virtual interactiva enfocada en fortalecer habilidades sociales, inteligencia emocional y liderazgo desde una edad temprana.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="https://wa.me/51969714577?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20clase%20de%20prueba." target="_blank" class="bg-gold hover:bg-goldHover text-navy font-bold py-4 px-8 rounded-full transition shadow-[0_0_15px_rgba(212,175,55,0.4)] text-center text-lg">
+                            Reservar clase de prueba
+                        </a>
+                        <a href="#cursos" class="bg-transparent border-2 border-white hover:bg-white hover:text-navy text-white font-bold py-4 px-8 rounded-full transition text-center text-lg">
+                            Ver programas
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagen Hero -->
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-0 bg-gold rounded-full blur-3xl opacity-20 transform translate-x-10 translate-y-10"></div>
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Niña sonriendo mientras usa una laptop" class="relative rounded-3xl shadow-2xl border-4 border-white/10 object-cover h-[500px] w-full" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                </div>
+            </div>
+        </div>
+        <!-- Forma de ola abajo -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,123.15,198.81,115.11,241.67,109.91,283.4,85.6,321.39,56.44Z" fill="#f8fafc"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS / ESTADÍSTICAS -->
+    <section id="nosotros" class="py-16 bg-lightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 transform -translate-y-20 relative z-20 border border-gray-100">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Nuestra Misión</h2>
+                    <h3 class="text-3xl font-extrabold text-navy">No solo educamos, formamos líderes</h3>
+                    <p class="mt-4 text-gray-600 text-lg">En LIDERA Education creemos que el éxito de los niños no solo depende de sus calificaciones, sino de su capacidad para comunicarse, empatizar y resolver problemas. Hemos creado un espacio seguro y divertido para que desarrollen todo su potencial.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-gray-100 pt-10">
+                    <div>
+                        <div class="text-4xl font-extrabold text-navy mb-1">100%</div>
+                        <div class="text-sm font-medium text-gray-500 uppercase">Clases en Vivo</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-extrabold text-navy mb-1">6-12</div>
+                        <div class="text-sm font-medium text-gray-500 uppercase">Años de Edad</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-extrabold text-navy mb-1">Max 10</div>
+                        <div class="text-sm font-medium text-gray-500 uppercase">Niños por Grupo</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-extrabold text-navy mb-1">✨</div>
+                        <div class="text-sm font-medium text-gray-500 uppercase">Metodología Lúdica</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN BENEFICIOS -->
+    <section id="beneficios" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">¿Por qué elegirnos?</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-navy">El poder de las habilidades blandas</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Beneficio 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Inteligencia Emocional</h4>
+                    <p class="text-gray-600">Enseñamos a los niños a identificar y gestionar sus emociones, reduciendo la frustración y construyendo una sana autoestima.</p>
+                </div>
+                <!-- Beneficio 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-yellow-50 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Comunicación Asertiva</h4>
+                    <p class="text-gray-600">Perderán el miedo a hablar en público y aprenderán a expresar sus ideas con claridad y respeto hacia los demás.</p>
+                </div>
+                <!-- Beneficio 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Trabajo en Equipo</h4>
+                    <p class="text-gray-600">A través de dinámicas grupales, desarrollan empatía, aprenden a colaborar y a solucionar problemas en conjunto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURSOS -->
+    <section id="cursos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-gold font-bold uppercase tracking-wider text-sm mb-2">Programas Destacados</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-navy">Nuestros Cursos Virtuales</h3>
+                </div>
+                <a href="https://wa.me/51969714577" target="_blank" class="hidden md:inline-flex items-center text-navy font-bold hover:text-gold transition">
+                    Solicitar catálogo completo <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Curso 1 -->
+                <div class="bg-lightBg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-navy text-xs font-bold px-3 py-1 rounded-full z-10">6 a 8 años</div>
+                        <img src="https://images.unsplash.com/photo-1587691592099-24045742c181?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Niños emocionados" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-gold font-bold text-sm mb-1">Duración: 4 semanas</div>
+                        <h4 class="text-xl font-bold text-navy mb-2">Taller de Pequeños Líderes</h4>
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-3">Iniciación a las habilidades sociales a través de cuentos, juegos de roles y actividades artísticas para perder la timidez.</p>
+                        <a href="https://wa.me/51969714577?text=Quiero%20informaci%C3%B3n%20del%20Taller%20de%20Peque%C3%B1os%20L%C3%ADderes" target="_blank" class="block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2.5 rounded-xl transition">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="bg-lightBg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 relative">
+                    <div class="absolute -right-10 top-6 bg-gold text-navy font-bold text-xs py-1 px-10 transform rotate-45 z-20 shadow-md">MÁS POPULAR</div>
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-navy text-xs font-bold px-3 py-1 rounded-full z-10">9 a 12 años</div>
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Niño hablando" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-gold font-bold text-sm mb-1">Duración: 6 semanas</div>
+                        <h4 class="text-xl font-bold text-navy mb-2">Oratoria y Expresión Segura</h4>
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-3">Estructuración de ideas, manejo del lenguaje corporal en cámara y técnicas para combatir el miedo escénico.</p>
+                        <a href="https://wa.me/51969714577?text=Quiero%20informaci%C3%B3n%20de%20Oratoria%20y%20Expresi%C3%B3n" target="_blank" class="block w-full text-center bg-navy text-white hover:bg-navyLight font-bold py-2.5 rounded-xl transition shadow-md">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="bg-lightBg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-navy text-xs font-bold px-3 py-1 rounded-full z-10">6 a 12 años</div>
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Niños interactuando online" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-gold font-bold text-sm mb-1">Duración: Mensual</div>
+                        <h4 class="text-xl font-bold text-navy mb-2">Club de Inteligencia Emocional</h4>
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-3">Un espacio continuo donde trabajamos resiliencia, empatía y resolución de conflictos de la vida cotidiana de forma dinámica.</p>
+                        <a href="https://wa.me/51969714577?text=Quiero%20informaci%C3%B3n%20del%20Club%20de%20Inteligencia%20Emocional" target="_blank" class="block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2.5 rounded-xl transition">Más información</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botón extra para móvil -->
+            <div class="mt-8 text-center md:hidden">
+                <a href="https://wa.me/51969714577" target="_blank" class="inline-flex items-center text-navy font-bold">
+                    Solicitar catálogo completo <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION (LLAMADO A LA ACCIÓN FINAL) -->
+    <section class="py-20 relative">
+        <div class="absolute inset-0 bg-navy"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-navy via-navyLight to-navy opacity-90"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">El mejor regalo para su futuro es la confianza de hoy</h2>
+            <p class="text-xl text-blue-100 mb-10">Únete a la comunidad de padres que están potenciando las habilidades reales de sus hijos. Cupos limitados por clase para garantizar atención personalizada.</p>
+            <a href="https://wa.me/51969714577?text=Hola,%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quiero%20inscribir%20a%20mi%20hijo." target="_blank" class="inline-flex items-center bg-gold hover:bg-goldHover text-navy font-bold py-4 px-10 rounded-full transition shadow-[0_0_20px_rgba(212,175,55,0.3)] text-lg transform hover:scale-105">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Hablar con un asesor
+            </a>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-navyLight py-12 text-blue-200 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 items-center border-b border-white/10 pb-8 mb-8">
+                <!-- Logo pie -->
+                <div>
+                    <div class="inline-block bg-white p-2 rounded-2xl cursor-pointer">
+                        <img src="2.png" alt="Lidera Education Logo" class="h-14 w-auto" onerror="this.src='https://placehold.co/200x80/002855/FFFFFF?text=LIDERA+Education&font=Montserrat'">
+                    </div>
+                    <p class="mt-4 text-blue-200">Formando la próxima generación de líderes asertivos y empáticos.</p>
+                </div>
+                
+                <!-- Contacto -->
+                <div class="md:text-center">
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide">Contacto</h4>
+                    <p>Chiclayo, Perú</p>
+                    <p>WhatsApp: +51 969714577</p>
+                    <p>Email: adriancarcri@gmail.com</p>
+                </div>
+
+                <!-- Horario -->
+                <div class="md:text-right">
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide">Modalidad</h4>
+                    <p>Clases 100% Virtuales</p>
+                    <p>Vía Zoom / Google Meet</p>
+                    <p>Horarios flexibles para niños</p>
+                </div>
+            </div>
+            <div class="text-center text-blue-300">
+                <p>&copy; 2026 LIDERA Education. Todos los derechos reservados. Registrado en Perú.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
